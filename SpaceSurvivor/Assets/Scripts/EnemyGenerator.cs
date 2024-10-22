@@ -18,6 +18,7 @@ public class EnemyGenerator : MonoBehaviour
     {
         StartCoroutine(SpawnEnemies());
         StartCoroutine(IncreaseEnemyLimit());
+        PacketManager.Instance.Enemies = activeEnemies;
     }
 
     private IEnumerator SpawnEnemies()

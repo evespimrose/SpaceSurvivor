@@ -11,6 +11,8 @@ public class PacketManager : MonoBehaviour
     private Queue<IEventMessage> messageQueue = new Queue<IEventMessage>();
     private List<Observer> observers = new List<Observer>();
 
+    public List<GameObject> Enemies { get; set; }
+
     private void Awake()
     {
         if (Instance == null)
